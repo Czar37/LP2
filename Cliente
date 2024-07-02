@@ -1,0 +1,51 @@
+package com.sistema.Entity;
+
+public class Cliente extends Entity {  //extends e super ou so super
+    private String nome;
+    private String cidade;
+    private int idade;
+    private int valor;
+    private int dias;
+    private Veiculo veiculo;
+
+    public Cliente(int id, String nome, String cidade, int idade, int valor, int dias, Veiculo veiculo){
+        super(id);
+        this.nome = nome;
+        this.cidade = cidade;
+        this.idade = idade;
+        this.valor = valor;
+        this.dias = dias;
+        this.veiculo = veiculo;
+    }
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+}
+    public int getValor(){
+        return valor;
+    }
+
+    public void setValor(int valor){
+        this.valor = valor;
+    }
+
+
